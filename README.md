@@ -9,7 +9,7 @@
 </a>
 <p>Line Sticker & Emoji Download Script</p>
 
-[![License](https://img.shields.io/github/license/CPuddingOwO/LineStickerDownloader?style=flat-square)](https://github.com/CPuddingOwO/LineStickerDownloader/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/CPuddingOwO/LineStickerDownloader)](https://github.com/CPuddingOwO/LineStickerDownloader/blob/master/LICENSE)
 
 </div>
 
