@@ -100,4 +100,4 @@ if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Using: python led.py <url>")
     else:
-        DownloadZIP(HTMLParser(URLParser(sys.argv[1], True)), DownloadDIR="./", ConvertAnime=False)
+        DownloadZIP(HTMLParser(URLParser(sys.argv[1], True)), DownloadDIR="./", ConvertAnime=True)
