@@ -42,7 +42,7 @@ def HTMLParser(Info: dict) -> dict:
     return {"Name": _Title, "ID": Info["ID"], "Type": Info["Type"]}
 
 
-def DownloadZIP(Info: dict, DownloadDIR: str = "./", ConvertAnime: bool = True) -> None:
+def DownloadZIP(Info: dict, DownloadDIR: str = "./", TmpDIR: str = "./Tmp/", ConvertAnime: bool = True) -> None:
     # APIs
     _API_ANIME_EMOJI = "https://stickershop.line-scdn.net/sticonshop/v1/sticon/{ID}/iphone/package_animation.zip"
     _API_PKG_EMOJI = "https://stickershop.line-scdn.net/sticonshop/v1/sticon/{ID}/iphone/package.zip"
@@ -54,7 +54,7 @@ def DownloadZIP(Info: dict, DownloadDIR: str = "./", ConvertAnime: bool = True) 
     _Current_PKG_API = _API_PKG_EMOJI if Info["Type"] == 1 else _API_PKG_STICKER
     _Current_ANIME_API = _API_ANIME_EMOJI if Info["Type"] == 1 else _API_ANIME_STICKER
     CurrentPath = os.path.abspath(".")
-    TmpDir = CurrentPath + "/Tmp/"
+    TmpDir = CurrentPath + TmpDIR
     FlagAnime = False
     try:
         resp = requests.get(_Current_ANIME_API.format(ID=ID))
@@ -107,6 +107,6 @@ if __name__ == "__main__":
     # # DownloadZIP(HTMLParser(URLParser(TmpURL, True)))
 
     if len(sys.argv) != 2:
-        print("用法: python led.py <url>")
+        print("Using: python led.py <url>")
     else:
         DownloadZIP(HTMLParser(URLParser(sys.argv[1], True)), DownloadDIR="./", ConvertAnime=False)

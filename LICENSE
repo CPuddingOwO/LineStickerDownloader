@@ -1,40 +1,3 @@
-<div align="center">
-
-<a href="https://twitter.com/sawaratsuki1004" target="_blank" rel="noopener noreferrer">
-<img src="https://cdn.jsdelivr.net/gh/CPuddingOwO/LineStickerDownloader@master/Python.png" alt="LineStickerDownloader" width="650px"></img>
-</a>
-
-<a href="https://github.com/CPuddingOwO/LineStickerDownloader/" target="_blank" rel="noopener noreferrer">
-<h1>LineStickerDownloader</h1>
-</a>
-<p>Line Sticker & Emoji Download Script</p>
-
-[![License](https://img.shields.io/github/license/CPuddingOwO/LineStickerDownloader?style=flat-square)](https://github.com/CPuddingOwO/LineStickerDownloader/blob/master/LICENSE)
-
-</div>
-
-## Install Dependenciess:
-
-```shell
-pip install requests beautifulsoup4
-```
-
-## Using:
-
-```shell
-python led.py <url>
-```
-
-## For Developers:
-
-ConvertAnime: ChangeFileExtensionName .png -> .webm
-
-DownloadDIR: Download Path
-
-TmpDIR: Tmp Path
-
-## License: 
-```
 MIT License
 
 Copyright (c) 2022 BuDingOwO
@@ -56,4 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-```
