@@ -80,7 +80,7 @@ def DownloadZIP(Info: dict, DownloadDIR: str = "./", TmpDIR: str = "./Tmp/", Con
                         os.remove(os.path.join(root, file))
                         continue
                     if file.endswith(".png"):
-                        os.rename(os.path.join(root, file), os.path.join(root, file.replace(".png", ".webm")))
+                        os.rename(os.path.join(root, file), os.path.join(root, file.replace(".png", ".apng")))
             # Entrypoint: Build Zip
             with zipfile.ZipFile(DownloadDIR + "/" + Info["Name"] + ".zip", 'w') as new_zip:
                 for root, dirs, files in os.walk(TmpDir):
