@@ -37,7 +37,7 @@ TmpDIR: Tmp Path
 ```
 MIT License
 
-Copyright (c) 2022 BuDingOwO
+Copyright (c) 2024 CPuddingOwO
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
