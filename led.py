@@ -42,7 +42,15 @@ def HTMLParser(Info: dict) -> dict:
     return {"Name": _Title, "ID": Info["ID"], "Type": Info["Type"]}
 
 
-def DownloadZIP(Info: dict, DownloadDIR: str = "./", TmpDIR: str = "./Tmp/", ConvertAnime: bool = True) -> None:
+def DownloadZIP(Info: dict, DownloadDIR: str = "./", TmpDIR: str = "/Tmp/", ConvertAnime: bool = True) -> None:
+    """
+
+    :param Info:
+    :param DownloadDIR:
+    :param TmpDIR:
+    :param ConvertAnime:
+    :return:
+    """
     # APIs
     _API_ANIME_EMOJI = "https://stickershop.line-scdn.net/sticonshop/v1/sticon/{ID}/iphone/package_animation.zip"
     _API_PKG_EMOJI = "https://stickershop.line-scdn.net/sticonshop/v1/sticon/{ID}/iphone/package.zip"
@@ -100,4 +108,4 @@ if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Using: python led.py <url>")
     else:
-        DownloadZIP(HTMLParser(URLParser(sys.argv[1], True)), DownloadDIR="./", ConvertAnime=True)
+        DownloadZIP(HTMLParser(URLParser(sys.argv[1], True)), DownloadDIR="./", ConvertAnime=False)
