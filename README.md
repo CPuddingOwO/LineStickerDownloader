@@ -27,7 +27,9 @@ python led.py <url>
 
 ## For Developers:
 
-ConvertAnime: ChangeFileExtensionName .png -> .webm
+ConvertAnime: ChangeFileExtensionName .png -> .apng
+
+> PNG and APNG share the suffix .png
 
 DownloadDIR: Download Path
 
