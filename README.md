@@ -27,13 +27,7 @@ python led.py <url>
 
 ## For Developers:
 
-ConvertAnime: ChangeFileExtensionName .png -> .apng
-
 > PNG and APNG share the suffix .png
-
-DownloadDIR: Download Path
-
-TmpDIR: Tmp Path
 
 ## License: 
 ```
